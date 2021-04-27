@@ -26,7 +26,7 @@ const Result = (props) => {
                 </div>
                 <div className="mainInfo">
                     <div className='temp'>
-                        <h2>{celsiusTemp} <sup>&#176;C</sup></h2>
+                        <h2>{celsiusTemp}<sup>&#176;C</sup></h2>
                         <h3>Odczuwalna: {celsiusFeelsLikeTemp} &#176;C</h3>
                     </div>
                     <div className='additionalInfo'>
