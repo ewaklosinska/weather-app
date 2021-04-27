@@ -1,0 +1,12 @@
+.App {
+    width: 500px;
+    min-height: 80vh;
+    margin: 0 auto;
+    color: white;
+}
+
+.App h1 {
+    padding: 64px 0;
+    font-size: 28px;
+    text-align: center;
+}
