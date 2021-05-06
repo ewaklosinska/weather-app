@@ -11,6 +11,7 @@ const Form = (props) => {
             onChange={props.change}
             placeholder="Wpisz miasto"
             />
+            <button><i className="search fas fa-search"></i></button>
         </form>
     )
 }

@@ -57,6 +57,7 @@ table {
 
 
 body {
+	/* position: relative; */
   margin: 0 auto;
   padding: 0;
   font-family: Arial, sans-serif;
@@ -65,6 +66,7 @@ body {
   background-repeat: no-repeat;
   background-position: bottom;
   background-size: cover;
+  overflow: hidden;
 }
 
 div.wrapper {

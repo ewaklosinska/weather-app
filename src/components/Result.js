@@ -18,9 +18,9 @@ const Result = (props) => {
         content = (
             <div className='result'>
                 <div className='placeAndTime'>
-                    <h2>{city.toUpperCase()}</h2>
-                    <h4>{date}</h4>
-                    <h4><i class="fas fa-clock"></i> {time}</h4>
+                    <h2 className='place'>{city.toUpperCase()}</h2>
+                    <h4 className='date'>{date}</h4>
+                    <h4 className='time'><i class="fas fa-clock"></i> {time}</h4>
                     <h4><i class="fas fa-sun"></i> {sunriseTime}</h4>
                     <h4><i class="fas fa-moon"></i> {sunsetTime}</h4>
                 </div>

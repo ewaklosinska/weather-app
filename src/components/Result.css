@@ -8,9 +8,11 @@
     padding:  20px;
 }
 
+
 .placeAndTime {
     display: flex;
     justify-content: space-between;
+    
 }
 
 .mainInfo {
@@ -56,3 +58,22 @@
     margin-top: 10px;
 }
 
+@media (max-width: 412px) {
+    .result {
+        width: 100%;
+        padding: 0 10px;
+    }
+
+    .placeAndTime {
+        flex-wrap: wrap;
+        line-height: 150%;
+        justify-content: space-around;
+        padding: 8px;
+    }
+
+    /* .place,
+    .date,
+    .time {
+        flex-grow: 2;
+    } */
+}
