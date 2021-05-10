@@ -16,31 +16,36 @@ const Result = (props) => {
     const descriptionCapitalized = description.charAt(0).toUpperCase() + description.slice(1);
     
         content = (
-            <div className='result'>
-                <div className='placeAndTime'>
-                    <h2 className='place'>{city.toUpperCase()}</h2>
-                    <h4 className='date'>{date}</h4>
-                    <h4 className='time'><i class="fas fa-clock"></i> {time}</h4>
-                    <h4><i class="fas fa-sun"></i> {sunriseTime}</h4>
-                    <h4><i class="fas fa-moon"></i> {sunsetTime}</h4>
-                </div>
-                <div className="mainInfo">
-                    <div className='temp'>
-                        <h2>{celsiusTemp}<sup>&#176;C</sup></h2>
-                        <h3>Odczuwalna: {celsiusFeelsLikeTemp} &#176;C</h3>
+            <div className='container'>
+                <div className='result'>
+                    <div className='placeAndTime'>
+                        <h2 className='place'>{city.toUpperCase()}</h2>
+                        <h4 className='date'>{date}</h4>
+                        <h4 className='time'>{time}</h4>
                     </div>
-                    <div className='additionalInfo'>
-                        <div>
-                            <img src={weatherIcon} alt="weather icon"/>
-                            <h4>{descriptionCapitalized}</h4>
+                    <div className="sunriseAndSunset">
+                        <h4><i className="fas fa-sun"></i> {sunriseTime}</h4>
+                        <h4><i className="fas fa-moon"></i> {sunsetTime}</h4>
+                    </div>
+                    <div className="mainInfo">
+                        <div className='temp'>
+                            <h2>{celsiusTemp}<sup>&#176;C</sup></h2>
+                            <h4>Odczuwalna: {celsiusFeelsLikeTemp} &#176;C</h4>
+                            <h4 className='description'>{descriptionCapitalized}</h4>
                         </div>
-                        <div>
-                            <h4>Siła wiatru: {wind} m/s</h4>
-                            <h4>Ciśnienie: {pressure} hPa</h4>
-                        </div>
-                    </div> 
+                        <div className='additionalInfo'>
+                            <div className='weatherIcon'>
+                                <img src={weatherIcon} alt="weather icon"/>
+                                
+                            </div>
+                            <div className='windAndPressure'>
+                                <h4>Siła wiatru: {wind} m/s</h4>
+                                <h4>Ciśnienie: {pressure} hPa</h4>
+                            </div>
+                        </div> 
+                    </div>
+                    
                 </div>
-                
             </div>
         )
     }

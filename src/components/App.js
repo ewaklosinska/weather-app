@@ -71,13 +71,15 @@ handleInputChange = (e) => {
 
 render()  {
   return (
-    <div className="App">
-      <h1>Sprawdź pogodę w swoim mieście:</h1>
-      <Form 
-      change={this.handleInputChange} 
-      submit={this.handleCitySubmit}
-      value={this.state.value}/>
-      <Result weather={this.state} />
+    <div className="wrapper">
+      <div className="App">
+        <h1 className='container'>Sprawdź pogodę w swoim mieście:</h1>
+        <Form 
+        change={this.handleInputChange} 
+        submit={this.handleCitySubmit}
+        value={this.state.value}/>
+        <Result weather={this.state} />
+      </div>
     </div>
     ) 
   }

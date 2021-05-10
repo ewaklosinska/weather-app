@@ -1,3 +1,166 @@
+.container {
+    width: 94%;
+    margin: 0 auto;
+}
+
+.result {
+    border: 1px solid transparent;
+    border-radius: 8px;
+    margin-top: 35px;
+    padding: 8px;
+    background-color: rgba(0, 0, 0, .5);
+}
+
+.weatherIcon {
+    display: none;
+}
+
+.placeAndTime {
+    display: flex;
+    justify-content: space-between;   
+    align-items: center;
+    padding-bottom: 8px;
+}
+
+.placeAndTime h2 {
+    font-size: 20px;
+}
+
+.sunriseAndSunset {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    padding-bottom: 8px;
+}
+
+.mainInfo {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    margin-top: 3vh;
+}
+
+.mainInfo .temp h2 {
+    font-size: 95px;
+}
+
+.mainInfo .temp sup {
+    font-size: 60px;
+}
+
+.mainInfo .temp h4 {
+    margin-top: 8px;
+}
+
+.mainInfo .temp .description {
+    line-height: 120%;
+}
+
+.windAndPressure {
+    margin-top: 18px;
+    border-top: 1px solid white;
+}
+
+.windAndPressure h4 {
+    margin-top: 8px;
+}
+
+@media (min-width: 360px) {
+    .container {
+        width: 80%;
+    }
+
+    .result {
+        margin-top: 50px;
+    }
+}
+
+@media (min-width: 533px) and (orientation: landscape) {
+    .result {
+        margin-top: 60px;
+    }
+}
+
+@media (min-width: 568px) {
+
+    .container {
+        width: 500px;
+    }
+
+    .result {
+        padding: 16px;
+    }
+
+    .mainInfo {
+        flex-direction: row;
+        justify-content: space-around;
+        margin: 5vh 0;
+    }
+
+    .mainInfo .temp {
+        width: 50%;
+    }
+
+    .mainInfo .additionalInfo {
+        width: 50%;
+        border-left: 1px solid white;
+        padding-bottom: 16px;
+    }
+
+    .weatherIcon {
+        display: block;
+    }
+  
+    .windAndPressure {
+        margin-top: 18px;
+        border-top: none;
+    }
+    
+}
+
+@media (min-width: 768px) {
+    .result {
+        margin-top: 70px;
+    }
+
+    .placeAndTime h2 {
+        font-size: 24px;
+    }
+
+    .placeAndTime h4 {
+        font-size: 20px;
+    }
+
+    .sunriseAndSunset {
+        font-size: 16px;
+    }
+
+    .windAndPressure h4 {
+        font-size: 20px;
+        margin-top: 12px;
+    }
+
+    .mainInfo {
+        margin: 4vh 0;
+    }
+
+    .mainInfo .temp h2 {
+        font-size: 110px;
+    }
+
+    .mainInfo .temp h4 {
+        font-size: 20px;
+        margin-top: 12px;
+    }
+}
+
+/* .container {
+    width: 500px;
+    margin: 0 auto;
+}
+
 .result {
     width: 500px;
     min-height: 45vh;
@@ -71,9 +234,10 @@
         padding: 8px;
     }
 
-    /* .place,
+    .place,
     .date,
     .time {
-        flex-grow: 2;
-    } */
-}
+        width: 30%;
+        text-align: center;
+    }
+} */

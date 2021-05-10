@@ -57,20 +57,10 @@ table {
 
 
 body {
-	/* position: relative; */
   margin: 0 auto;
   padding: 0;
   font-family: Arial, sans-serif;
   min-height: 100vh;
-  background-image: url('./img/morning-4284120_1920.jpg');
-  background-repeat: no-repeat;
-  background-position: bottom;
-  background-size: cover;
-  overflow: hidden;
+  
 }
 
-div.wrapper {
-  width: 100%;
-  min-height: 100vh;
-  background-color: rgba(0, 0, 0, .3)
-}
